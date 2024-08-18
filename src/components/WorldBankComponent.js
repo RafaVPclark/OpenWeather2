@@ -1,6 +1,4 @@
 function worldBankComponent({infoCountry}){
-    console.log("Entrou na função");
-    console.log(infoCountry);
 
     return (
         <div>

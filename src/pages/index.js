@@ -8,6 +8,7 @@ import WorldBankComponent from "@/components/WorldBankComponent";
 import CountriesInfos from "@/components/CountriesInfos";
 
 function Home() {
+  console.log(process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY)
   const [input, setInput] = useState("");
   const [countryData, setCountryData] = useState(null);
   const [countryPib, setCountryPib] = useState(null);
@@ -23,7 +24,7 @@ function Home() {
       await getCountriesInfo(countryCode);
     } catch (error) {
       console.error("Erro ao encontrar o clima", error);
-      alert("Erro ao encontrar o clima");
+      // alert("Erro ao encontrar o clima");
     }
   }
   // Buscar api do PIB do país - Segunda Api utilizada
@@ -42,7 +43,7 @@ function Home() {
     try {
       const response = await restCountries.get(`alpha/${countryCode}`);
       setCountryInfos(response.data);
-      console.log(countryInfos[0]);
+      // console.log(countryInfos[0]);
     } catch (error) {
       console.log(error);
     }
@@ -71,7 +72,7 @@ function Home() {
                       height="30"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
-                      fill="#446a4d" // Cor aplicada diretamente
+                      fill="#446a4d"
                     >
                       <path d="M21.71 20.29l-4.58-4.58A8.93 8.93 0 0 0 19 10a9 9 0 1 0-9 9 8.93 8.93 0 0 0 5.71-2.13l4.58 4.58a1 1 0 0 0 1.42-1.42zM10 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" />
                     </svg>
