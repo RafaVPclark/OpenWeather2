@@ -1,13 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Itim&display=swap');
+
+
+.itim-regular {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 *{
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 #home{
-    background-color: #eee7e7;
-    height:100vh;
+    background-color: #F4DFC8;
+    min-height:100vh;
 }
 .margin{
     border: 1px solid red;
 }
+
+/* Conteúdo */
+.card-esquerdo{
+    height: 80vh;
+    border-radius: 30px;
+    background:linear-gradient(to left,#78857b,#446a4d);
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3);
+}
+.card-direito{
+    height: 80vh;
+    border-radius: 30px;    
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}  
+.btn-custom {
+    border: 4px solid #F4DFC8;
+    background-color: #F4DFC8 !important;
+    padding: 0; /* Evita que o padding do botão afete o tamanho do ícone */
+}
+
+.title{
+    font-family: itim;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #E8ECD5;
+}
+
+.content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #E8ECD5;
+}
+
+.info-important{
+    color: #F4DFC8;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+  
 
