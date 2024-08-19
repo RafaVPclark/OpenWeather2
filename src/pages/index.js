@@ -90,20 +90,22 @@ function Home() {
             </div>
           </div>
           {/* div para a parte do tempo/clima */}
-          <div className="col-10 col-md-4 mt-5 mx-auto card-direito">
-            {/* Div para a parte das informações do país */}
-            {countryInfos ?
-                <div className="col-12 mt-4 mx-auto">
-                  <CountriesInfos country={countryInfos[0]}></CountriesInfos>
-                </div>
-                : ""}
-              {/* Div para a parte do pib do país */}
-              {countryPib ?
-                <div className="col-12 mt-4 mx-auto">
-                  <WorldBankComponent infoCountry={countryPib[1][0]}></WorldBankComponent>
-                </div>
-                : ""}
-          </div>
+          {countryData? 
+            <div className="col-10 col-md-4 mt-5 mx-auto card-direito mb-5">
+              {/* Div para a parte das informações do país */}
+              {countryInfos ?
+                  <div className="col-12 mt-4 mx-auto">
+                    <CountriesInfos country={countryInfos[0]}></CountriesInfos>
+                  </div>
+                  : ""}
+                {/* Div para a parte do pib do país */}
+                {countryPib ?
+                  <div className="col-12 mt-4 mx-auto">
+                    <WorldBankComponent infoCountry={countryPib[1]}></WorldBankComponent>
+                  </div>
+                  : ""}
+            </div>
+          :""}
         </div>
       </div>
     </section>
