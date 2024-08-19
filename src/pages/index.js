@@ -14,6 +14,7 @@ function Home() {
   const [countryInfos, setCountryInfos] = useState(null);
 
   // Buscar a API do tempo - Primeira API utilizada
+  
   async function handleSearchWeather() {
     try {
       const response = await weatherApi.get(`weather?q=${input}&appid=${process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY}&units=metric&lang=pt_br`);
@@ -23,7 +24,7 @@ function Home() {
       await getCountriesInfo(countryCode);
     } catch (error) {
       console.error("Erro ao encontrar o clima", error);
-      // alert("Erro ao encontrar o clima");
+      alert("Erro ao encontrar o clima");
     }
   }
   // Buscar api do PIB do país - Segunda Api utilizada
