@@ -8,7 +8,6 @@ import WorldBankComponent from "@/components/WorldBankComponent";
 import CountriesInfos from "@/components/CountriesInfos";
 
 function Home() {
-  console.log(process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY)
   const [input, setInput] = useState("");
   const [countryData, setCountryData] = useState(null);
   const [countryPib, setCountryPib] = useState(null);
