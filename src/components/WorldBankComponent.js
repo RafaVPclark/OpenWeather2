@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "@/styles/worldbank.module.css";
-function worldBankComponent({ infoCountry }) {
+function WorldBankComponent({ infoCountry }) {
 
     useEffect(() => {
         import('bootstrap/dist/js/bootstrap.bundle.min');
@@ -47,4 +47,4 @@ function worldBankComponent({ infoCountry }) {
     );
 }
 
-export default worldBankComponent;
+export default WorldBankComponent;
