@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import styles from "@/styles/worldbank.module.css";
 function worldBankComponent({ infoCountry }) {
-    console.log(infoCountry[0]);
     return (
         <div className="container-fluid mb-5 mt-5 text-center">
             <div className="row">
