@@ -4,7 +4,7 @@ function CountriesInfos({ country }) {
         <section id="infoPais">
 
             <div className="row">
-                <div className={`col-3 mx-auto ${styles['card-custom']} text-center`} >
+                <div className={`col-5 col-lg-3 mt-3 mx-auto ${styles['card-custom']} text-center`} >
                     <div className="row">
                         <div className="col-10 mt-4 pt-3 mx-auto">
                             <img className="img-fluid" width={60 + "px"} src={country.flags.svg}></img>
@@ -25,7 +25,7 @@ function CountriesInfos({ country }) {
 
                 {/* Segundo card */}
 
-                <div className={`col-3 mx-auto ${styles['card-custom']} text-center`} >
+                <div className={`col-5 col-lg-3 mt-3 mx-auto ${styles['card-custom']} text-center`} >
                     <div className="row">
                         <div className="col-10 mt-4 pt-3 mx-auto">
                             {/* <img className="img-fluid" width={60 + "px"} src={"/public/speech-svgrepo-com"}></img> */}
@@ -55,7 +55,7 @@ function CountriesInfos({ country }) {
 
                 </div>
                 {/* Terceiro card */}
-                <div className={`col-3 mx-auto ${styles['card-custom']} text-center`}>
+                <div className={`col-5 col-lg-3 mt-3 mx-auto ${styles['card-custom']} text-center`}>
                     <div className="row">
                         <div className="col-10 mt-4 pt-3 mx-auto">
                             {/* Referencie o SVG diretamente da pasta public */}
@@ -76,9 +76,9 @@ function CountriesInfos({ country }) {
                 </div>
 
             </div>
-            <div className="row mt-5">
+            <div className="row ">
                 {/* Terceiro card */}
-                <div className={`col-3 mx-auto ${styles['card-custom']} text-center`}>
+                <div className={`col-5 col-lg-3 mt-3 mx-auto ${styles['card-custom']} text-center`}>
                     <div className="row">
                         <div className="col-10 mt-4 pt-3 mx-auto">
                             {/* Referencie o SVG diretamente da pasta public */}
