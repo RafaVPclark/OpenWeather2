@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import styles from "@/styles/worldbank.module.css";
 function worldBankComponent({ infoCountry }) {
+
+    useEffect(() => {
+        import('bootstrap/dist/js/bootstrap.bundle.min');
+    }, []);
     return (
         <div className="container-fluid mb-5 mt-5 text-center">
             <div className="row">
