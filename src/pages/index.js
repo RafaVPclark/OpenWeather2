@@ -35,6 +35,7 @@ function Home() {
       setCountryPib(response.data);
     } catch (error) {
       console.log(error);
+      alert("Erro ao acessar informações de PIB");
     }
   }
 
@@ -46,6 +47,7 @@ function Home() {
       // console.log(countryInfos[0]);
     } catch (error) {
       console.log(error);
+      alert("Erro ao encontras as informações de um País");
     }
   }
   // Função que chama as outras APIs 
